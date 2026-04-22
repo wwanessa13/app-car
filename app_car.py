@@ -20,7 +20,7 @@ def format_brl(valor):
 @st.cache_resource
 def load_model():
     try:
-        return joblib.load("model_car.pkl")
+        return joblib.load("model.pkl")
     except FileNotFoundError:
         return None
 
